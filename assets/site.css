@@ -1668,6 +1668,10 @@ body.hrev[data-dv="c"]:not(#_) #sc_hero_c .hc-stage.hc-on{opacity:1;transform:no
 /* ===== 사용자 피드백 반영 13차 (10/28) ===== */
 body[data-dv="c"]:not(#_) #sc_annc_c{position:relative;z-index:4}
 
+/* ===== 사용자 피드백 반영 14차 (10/28) ===== */
+body[data-dv="c"]:not(#_) .site-nav ul,body[data-dv="c"]:not(#_) #sc_nav .site-nav ul,body[data-dv="c"]:not(#_) .band .site-nav ul{background:rgba(255,255,255,.55);border:1px solid rgba(23,23,33,.16)}
+body[data-dv="c"][data-mode="dark"]:not(#_) .site-nav ul,body[data-dv="c"][data-mode="dark"]:not(#_) #sc_nav .site-nav ul,body[data-dv="c"][data-mode="dark"]:not(#_) .band .site-nav ul{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18)}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
@@ -1680,3 +1684,9 @@ body{background:var(--paper)}
 .skip{position:absolute;left:-9999px;top:0}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;color:#171721;padding:8px 12px;border-radius:8px}
 .nf{min-height:52vh;display:flex;flex-direction:column;justify-content:center}
 h1{margin:0}
+.mtoast{position:fixed;left:50%;bottom:28px;z-index:200;transform:translate(-50%,16px);opacity:0;pointer-events:none;max-width:calc(100vw - 32px);
+  background:#171721;color:#fff;border-radius:999px;padding:12px 20px;font-size:14.5px;font-weight:500;line-height:1.4;box-shadow:0 10px 30px rgba(0,0,0,.18);transition:opacity .25s,transform .25s}
+.mtoast.on{opacity:1;transform:translate(-50%,0)}
+.mtoast b{font-weight:700}
+body[data-mode="dark"] .mtoast{background:#EEF0FB;color:#171721}
+@media (prefers-reduced-motion:reduce){.mtoast{transition:none}}

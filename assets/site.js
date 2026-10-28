@@ -25,6 +25,25 @@
     if(e.key==='Enter'){ var g=e.target.closest&&e.target.closest('[data-go]'); if(g&&g.tagName!=='A'){ go(g.getAttribute('data-go')); }
       var n=e.target.closest&&e.target.closest('.nrow[data-url]'); if(n) window.open(n.getAttribute('data-url'),'_blank','noopener'); }
   });
+  // 메일 버튼: 메일 앱을 여는 것과 함께 주소를 복사하고 안내를 띄운다(메일 앱이 없거나 다른 앱이 열려도 주소를 바로 쓸 수 있게)
+  var toastTimer;
+  function toast(addr){
+    var t=document.getElementById('mtoast');
+    if(!t){ t=document.createElement('div'); t.id='mtoast'; t.className='mtoast'; t.setAttribute('role','status'); t.setAttribute('aria-live','polite'); document.body.appendChild(t); }
+    t.innerHTML='메일 주소를 복사했습니다 · <b></b>'; t.querySelector('b').textContent=addr;
+    t.classList.add('on'); clearTimeout(toastTimer); toastTimer=setTimeout(function(){ t.classList.remove('on'); },3200);
+  }
+  function copyText(s){
+    try{ if(navigator.clipboard&&window.isSecureContext) return navigator.clipboard.writeText(s); }catch(e){}
+    return new Promise(function(ok,no){ try{ var ta=document.createElement('textarea'); ta.value=s; ta.setAttribute('readonly','');
+      ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select();
+      var r=document.execCommand('copy'); document.body.removeChild(ta); r?ok():no(); }catch(e){ no(e); } });
+  }
+  document.addEventListener('click',function(e){
+    var m=e.target.closest&&e.target.closest('a[href^="mailto:"]'); if(!m) return;
+    var addr=decodeURIComponent(m.getAttribute('href').slice(7).split('?')[0]);
+    copyText(addr).then(function(){ toast(addr); },function(){});
+  },true);
   document.addEventListener('click',function(e){
     if(!e.target.closest) return;
     var v=e.target.closest('[data-video]');
