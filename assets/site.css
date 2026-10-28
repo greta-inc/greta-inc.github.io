@@ -1665,6 +1665,9 @@ body.hrev[data-dv="c"]:not(#_) #sc_hero_c .hc-stage{opacity:0;transform:translat
 body.hrev[data-dv="c"]:not(#_) #sc_hero_c .hc-stage.hc-on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){ body.hrev[data-dv="c"]:not(#_) #sc_hero_c .hc-stage{transform:none;transition:opacity .4s} }
 
+/* ===== 사용자 피드백 반영 13차 (10/28) ===== */
+body[data-dv="c"]:not(#_) #sc_annc_c{position:relative;z-index:4}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
