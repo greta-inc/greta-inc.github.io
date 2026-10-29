@@ -2115,6 +2115,8 @@ h1{margin:0}
 body[data-mode="dark"] .mtoast{background:#EEF0FB;color:#171721}
 @media (prefers-reduced-motion:reduce){.mtoast{transition:none}}
 /* 언어 버튼이 생겨 오른쪽이 넓어져도 메뉴 알약은 화면 가운데(10/29) */
+/* 가운데 고정(transform)으로 메뉴가 첫 화면 글(.hero>* z-index:1) 아래에 깔려 하위 메뉴를 누를 수 없던 문제 → 메뉴 줄을 위로 */
+body[data-dv="c"]:not(#_) .site-nav{position:relative;z-index:20}
 @media (min-width:1240px){
 body[data-dv="c"] .site-nav{position:relative}
 body[data-dv="c"] .site-nav>ul{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0}
