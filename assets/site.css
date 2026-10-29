@@ -2093,6 +2093,9 @@ body[data-dv="c"]:not(#_) .cs-bio .linkbtn{margin-top:8px}
 body[data-dv="c"][data-mode="dark"]:not(#_) .vr2 .vc-img{border-color:rgba(255,255,255,.1)}
 body[data-dv="c"]:not(#_) #sc_f_head .hero p{max-width:none}
 
+/* ===== 사용자 결정 반영 26차 (10/29) ===== */
+body[data-dv="c"]:not(#_) #sc_c_msg .ceo-msg{display:block}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
