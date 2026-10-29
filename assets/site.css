@@ -1743,8 +1743,10 @@ body[data-dv="c"]:not(#_) .cmp2 .c2-old::before{content:"기존 · ";font-weight
 .gw .cc{font-family:var(--latin);font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 6px;border-radius:5px;color:#fff}
 .gw .cc-kr{background:#3E3BD6} .gw .cc-us{background:#6F6EE6} .gw .cc-jp{background:#A3A2F2}
 .gw .gl-c ol{list-style:none;margin:0;padding:0;display:grid;gap:7px}
-.gw .gl-c li b{display:block;font-size:14px;font-weight:600;color:#171721;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.gw .gl-c li em{display:block;font-style:normal;font-size:13px;color:#7C7D8E;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--latin)}
+.gw .gl-c{min-width:0} .gw .gl-c ol{grid-template-columns:minmax(0,1fr)} .gw .gl-c li{min-width:0}
+.gw .gl-c li b{display:block;font-size:14px;font-weight:600;color:#171721;line-height:1.35;word-break:keep-all;overflow-wrap:anywhere}
+.gw .gl-c li em{display:block;font-style:normal;font-size:13px;color:#7C7D8E;line-height:1.35;overflow-wrap:anywhere;font-family:var(--latin)}
+.gw td.gc.z{background:transparent !important;color:#B4B5C2;cursor:default;box-shadow:inset 0 0 0 1px rgba(23,23,33,.08)} .gw td.gc.z:hover{transform:none;box-shadow:inset 0 0 0 1px rgba(23,23,33,.08)}
 .gw .gl-c li.none{font-size:13px;color:#9A9BAC}
 .gw.gw-s .gl-c li:nth-child(n+4){display:none}
 .gw .gw-src{margin:10px 0 0;font-size:13px;color:#9A9BAC;text-align:right}
@@ -1935,6 +1937,7 @@ body[data-dv="c"]:not(#_) li.rli{display:grid;grid-template-columns:150px minmax
 body[data-dv="c"]:not(#_) li.rli .rl{display:flex;align-items:center;justify-content:center;height:56px;border-radius:12px;background:#fff;border:1px solid rgba(23,23,33,.08);padding:0 14px}
 body[data-dv="c"]:not(#_) li.rli .rl img{max-width:118px;max-height:30px;width:auto;height:auto;object-fit:contain}
 body[data-dv="c"]:not(#_) li.rli .rl-x{font-size:13px;font-weight:600;color:#8C8D9E;text-align:center;line-height:1.3;word-break:keep-all;background:transparent;border-style:dashed}
+body[data-dv="c"]:not(#_) li.rli .rl-nf,body[data-dv="c"][data-mode="dark"]:not(#_) li.rli .rl-nf{background:#00B8FF;border-color:#00B8FF}
 body[data-dv="c"][data-mode="dark"]:not(#_) li.rli .rl{background:#fff} body[data-dv="c"][data-mode="dark"]:not(#_) li.rli .rl-x{background:transparent;color:#A9AAB9;border-color:rgba(255,255,255,.2)}
 @media (max-width:760px){ body[data-dv="c"]:not(#_) li.rli{grid-template-columns:96px minmax(0,1fr);gap:12px} body[data-dv="c"]:not(#_) li.rli .rl{height:44px;padding:0 8px} body[data-dv="c"]:not(#_) li.rli .rl img{max-width:80px;max-height:24px} body[data-dv="c"]:not(#_) li.rli .rl-x{font-size:12px} }
 /* 메인 솔루션 오른쪽: 창 여러 개 */
@@ -2000,7 +2003,6 @@ body[data-dv="c"]:not(#_) .wf-steps button em{font-size:15px}
 body[data-dv="c"]:not(#_) .df-ill span{font-size:15px}
 body[data-dv="c"]:not(#_) .rm-y em{font-size:14.5px} body[data-dv="c"]:not(#_) .rm-o span{font-size:15px} body[data-dv="c"]:not(#_) .rm ul{font-size:15px}
 body[data-dv="c"]:not(#_) li.rli .rl-x{font-size:14px}
-
 /* 더 구체적인 이전 규칙을 이기도록 */
 body[data-dv="c"]:not(#_) .band .eyebrow,body[data-dv="c"]:not(#_) .hero .eyebrow,body[data-dv="c"]:not(#_) .hc .eyebrow,body[data-dv="c"]:not(#_) .ceo-msg .eyebrow{font-size:16px !important}
 body[data-dv="c"]:not(#_) .ucase .k,body[data-dv="c"]:not(#_) .sec .k{font-size:15px !important}
