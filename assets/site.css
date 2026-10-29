@@ -2011,6 +2011,12 @@ body[data-dv="c"]:not(#_) .mx-bd .more{font-size:15.5px !important}
 /* ===== 검증 후 정리 20차 (10/29) ===== */
 @media (max-width:760px){ body[data-dv="c"]:not(#_) .rm5{grid-template-columns:1fr;min-width:0} }
 
+/* ===== 사용자 피드백 반영 21차 (10/29) ===== */
+body[data-dv="c"]:not(#_) li.rli .rl-a,body[data-dv="c"][data-mode="dark"]:not(#_) li.rli .rl-a{border:1px solid rgba(23,23,33,.08);border-style:solid;background:#fff;gap:8px;flex-direction:row}
+body[data-dv="c"]:not(#_) li.rli .rl-a svg{width:22px;height:22px;flex:none;fill:none;stroke:#3E3BD6;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+body[data-dv="c"]:not(#_) li.rli .rl-a b{font-size:15px;font-weight:700;color:#2A2B38;letter-spacing:-.01em;white-space:nowrap}
+@media (max-width:760px){ body[data-dv="c"]:not(#_) li.rli .rl-a svg{width:18px;height:18px} body[data-dv="c"]:not(#_) li.rli .rl-a b{font-size:12.5px} }
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
