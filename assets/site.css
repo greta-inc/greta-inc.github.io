@@ -2114,3 +2114,15 @@ h1{margin:0}
 .mtoast b{font-weight:700}
 body[data-mode="dark"] .mtoast{background:#EEF0FB;color:#171721}
 @media (prefers-reduced-motion:reduce){.mtoast{transition:none}}
+/* 언어 버튼이 생겨 오른쪽이 넓어져도 메뉴 알약은 화면 가운데(10/29) */
+@media (min-width:1240px){
+body[data-dv="c"] .site-nav{position:relative}
+body[data-dv="c"] .site-nav>ul{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0}
+body[data-dv="c"] .site-nav .lang{margin-left:auto}
+}
+/* 태블릿(761~999px): 언어 버튼 때문에 문의하기가 다음 줄로 밀리지 않게 메뉴 알약을 둘째 줄 가운데로 */
+@media (min-width:761px) and (max-width:999px){
+body[data-dv="c"]:not(#_) .site-nav{row-gap:12px}
+body[data-dv="c"]:not(#_) .site-nav>ul{order:9;margin:0 auto}
+body[data-dv="c"]:not(#_) .site-nav .lang{margin-left:auto}
+}
