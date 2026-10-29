@@ -2087,6 +2087,12 @@ body[data-dv="c"]:not(#_) .cs-bio ul{margin:0;padding:0;list-style:none;display:
 body[data-dv="c"]:not(#_) .cs-bio li{font-size:15px;line-height:1.5;padding-left:12px;position:relative;color:var(--ink)} body[data-dv="c"]:not(#_) .cs-bio li::before{content:"";position:absolute;left:0;top:.68em;width:4px;height:4px;border-radius:50%;background:#3E3BD6}
 body[data-dv="c"]:not(#_) .cs-bio .linkbtn{margin-top:8px}
 
+/* ===== 사용자 피드백 반영 25차 (10/29) ===== */
+.vr2 .vc-img{margin:6px 0 8px;border-radius:14px;overflow:hidden;border:1px solid rgba(23,23,33,.08);background:#F7F8FA}
+.vr2 .vc-img img{display:block;width:100%;height:auto}
+body[data-dv="c"][data-mode="dark"]:not(#_) .vr2 .vc-img{border-color:rgba(255,255,255,.1)}
+body[data-dv="c"]:not(#_) #sc_f_head .hero p{max-width:none}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
