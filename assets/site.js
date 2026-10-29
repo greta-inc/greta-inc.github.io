@@ -39,6 +39,15 @@
       ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select();
       var r=document.execCommand('copy'); document.body.removeChild(ta); r?ok():no(); }catch(e){ no(e); } });
   }
+  // 언어 버튼(10/29): 영어·일본어판은 한국어판 확정 뒤 만든다. 그 전에는 준비 중 안내만
+  var LANGMSG={en:'The English version is in preparation.',ja:'日本語版は準備中です。'};
+  document.addEventListener('click',function(e){
+    var g=e.target.closest&&e.target.closest('.lang .lg[data-lang]'); if(!g) return;
+    var l=g.getAttribute('data-lang'); if(!LANGMSG[l]) return;
+    var t=document.getElementById('mtoast');
+    if(!t){ t=document.createElement('div'); t.id='mtoast'; t.className='mtoast'; t.setAttribute('role','status'); t.setAttribute('aria-live','polite'); document.body.appendChild(t); }
+    t.textContent=LANGMSG[l]; t.classList.add('on'); clearTimeout(toastTimer); toastTimer=setTimeout(function(){ t.classList.remove('on'); },3200);
+  });
   document.addEventListener('click',function(e){
     var m=e.target.closest&&e.target.closest('a[href^="mailto:"]'); if(!m) return;
     var addr=decodeURIComponent(m.getAttribute('href').slice(7).split('?')[0]);
