@@ -2114,6 +2114,22 @@ h1{margin:0}
 .mtoast b{font-weight:700}
 body[data-mode="dark"] .mtoast{background:#EEF0FB;color:#171721}
 @media (prefers-reduced-motion:reduce){.mtoast{transition:none}}
+/* ELDO 바로가기 플로팅 버튼(10/30) */
+.eldo-fab{position:fixed;right:24px;bottom:24px;z-index:150;display:inline-flex;align-items:center;gap:6px;padding:13px 20px;border-radius:999px;
+  background:#3E3BD6;color:#fff !important;text-decoration:none !important;font-family:var(--body);font-size:15.5px;line-height:1.2;font-weight:600;letter-spacing:-.01em;
+  box-shadow:0 10px 28px -10px rgba(62,59,214,.65),0 2px 6px rgba(23,23,33,.12);transition:transform .18s,box-shadow .18s,background .18s}
+.eldo-fab b{font-family:"Space Grotesk",var(--body,sans-serif);font-weight:700;letter-spacing:.02em}
+.eldo-fab:hover{transform:translateY(-2px);background:#3330C4;box-shadow:0 14px 32px -10px rgba(62,59,214,.75),0 2px 6px rgba(23,23,33,.14)}
+.eldo-fab:focus-visible{outline:3px solid #9091FF;outline-offset:3px}
+body[data-mode="dark"] .eldo-fab{background:#9091FF;color:#14141C !important;box-shadow:0 10px 28px -10px rgba(144,145,255,.55),0 2px 6px rgba(0,0,0,.3)}
+body[data-mode="dark"] .eldo-fab:hover{background:#A3A4FF}
+@media (max-width:760px){
+  .eldo-fab{right:14px;bottom:14px;padding:10px 15px;font-size:14px}
+  .mtoast{bottom:72px}
+  body[data-dv="c"]:not(#_) #sc_footer{padding-bottom:72px}
+}
+@media (prefers-reduced-motion:reduce){.eldo-fab{transition:none}.eldo-fab:hover{transform:none}}
+@media print{.eldo-fab{display:none}}
 /* 언어 버튼이 생겨 오른쪽이 넓어져도 메뉴 알약은 화면 가운데(10/29) */
 /* 가운데 고정(transform)으로 메뉴가 첫 화면 글(.hero>* z-index:1) 아래에 깔려 하위 메뉴를 누를 수 없던 문제 → 메뉴 줄을 위로 */
 body[data-dv="c"]:not(#_) .site-nav{position:relative;z-index:20}
