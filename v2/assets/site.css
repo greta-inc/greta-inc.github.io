@@ -2099,6 +2099,10 @@ body[data-dv="c"]:not(#_) #sc_c_msg .ceo-msg{display:block}
 /* ===== 사용자 피드백 반영 30차 (11/12) ===== */
 .tl .tx.tx-m{display:grid;gap:6px}
 
+/* ===== 사용자 피드백 반영 32차 (11/12) ===== */
+.gw .b-sc{opacity:.88}
+.sd-d circle{opacity:.92} .sd-b i{opacity:.88}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
