@@ -2096,6 +2096,9 @@ body[data-dv="c"]:not(#_) #sc_f_head .hero p{max-width:none}
 /* ===== 사용자 결정 반영 26차 (10/29) ===== */
 body[data-dv="c"]:not(#_) #sc_c_msg .ceo-msg{display:block}
 
+/* ===== 사용자 피드백 반영 30차 (11/12) ===== */
+.tl .tx.tx-m{display:grid;gap:6px}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}

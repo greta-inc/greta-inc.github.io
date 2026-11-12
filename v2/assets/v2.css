@@ -49,6 +49,12 @@ body[data-dv="c"]:not(#_) .v2steps{display:flex;flex-wrap:wrap;align-items:cente
 body[data-dv="c"]:not(#_) .v2steps span{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--rule);border-radius:999px}
 body[data-dv="c"]:not(#_) .v2steps b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--indigo);color:#fff;font-size:12.5px}
 body[data-dv="c"]:not(#_) .v2steps i{font-style:normal;color:var(--smut)}
+/* 11/12 메뉴 구분선(솔루션 | 회사) */
+body[data-dv="c"]:not(#_) .site-nav.v2nav>ul.mnu>li.msep{width:1px;height:22px;align-self:center;background:currentColor;opacity:.28;padding:0}
+@media (max-width:1000px){ body[data-dv="c"]:not(#_) .site-nav.v2nav>ul.mnu>li.msep{width:auto;height:2px;margin:4px 0;opacity:.55} }
+/* 11/12 어두운 영역이 바로 이어지지 않게: 탭 안의 마지막 섹션이 어두우면 아래에 바탕색 여백 */
+body[data-dv="c"]:not(#_) .v2panel:has(> .band:last-child:is(#sc_s_engine,#sc_e_engine,#sc_dt_who,#sc_a_research,#sc_stats_c,#sc_s_quality)){padding-bottom:72px}
+@media (max-width:760px){ body[data-dv="c"]:not(#_) .v2panel:has(> .band:last-child:is(#sc_s_engine,#sc_e_engine,#sc_dt_who,#sc_a_research,#sc_stats_c,#sc_s_quality)){padding-bottom:40px} }
 /* 시안 표시 */
 .v2badge{position:fixed;left:16px;bottom:16px;z-index:140;background:#171721;color:#fff;font:600 12.5px/1 var(--body,sans-serif);padding:8px 12px;border-radius:999px;opacity:.85}
 body[data-mode="dark"] .v2badge{background:#EEF0FB;color:#171721}
