@@ -2103,6 +2103,14 @@ body[data-dv="c"]:not(#_) #sc_c_msg .ceo-msg{display:block}
 .gw .b-sc{opacity:.88}
 .sd-d circle{opacity:.92} .sd-b i{opacity:.88}
 
+/* ===== 사용자 피드백 반영 33차 (11/12) ===== */
+.w-risk .rk{display:block;width:100%;height:auto;margin-top:6px}
+.w-risk .rk-t{font-size:11.5px;fill:var(--smut);font-family:"Space Grotesk",var(--body,sans-serif)}
+.w-risk .rk-ev{font-size:12px;font-weight:600;fill:var(--sink2,#2A2B38)}
+.w-risk .rk-dot{fill:var(--card,#fff);stroke:var(--indigo);stroke-width:2.2}
+.w-risk .rk-lead{stroke:var(--smut);stroke-width:1;opacity:.6}
+.w-risk .rk-cap{margin:10px 0 0;font-size:13.5px;line-height:1.55;color:var(--smut)}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
