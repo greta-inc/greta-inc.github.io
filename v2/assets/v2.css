@@ -65,3 +65,46 @@ body[data-dv="c"]:not(#_) .v2faq .faqgroup+.faqgroup{margin-top:44px}
 /* 시안 표시 */
 .v2badge{position:fixed;left:16px;bottom:16px;z-index:140;background:#171721;color:#fff;font:600 12.5px/1 var(--body,sans-serif);padding:8px 12px;border-radius:999px;opacity:.85}
 body[data-mode="dark"] .v2badge{background:#EEF0FB;color:#171721}
+
+/* 11/13 SynPersona 품질 평가 · 이변량 비교(상관계수) 창 */
+body:not(#_) .cor-hv{margin-top:34px}
+body:not(#_) .cor{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);gap:30px;align-items:start}
+body:not(#_) table.cor-t{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed;font-variant-numeric:tabular-nums}
+body:not(#_) table.cor-t thead th{font-size:12.5px;font-weight:500;color:#5F6072;text-align:center;padding:0 2px 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body:not(#_) table.cor-t tbody th{font-size:12.5px;font-weight:500;color:#55566A;text-align:left;white-space:nowrap;width:76px;padding-right:4px}
+body:not(#_) table.cor-t td{text-align:center;border-radius:8px;padding:7px 2px;line-height:1.25}
+body:not(#_) table.cor-t td b{display:block;font-size:13.5px;font-weight:600;color:#171721}
+body:not(#_) table.cor-t td span{display:block;font-size:12.5px;color:#3E3BD6}
+body:not(#_) table.cor-t td.ok{background:#E3F3EA}
+body:not(#_) table.cor-t td.mid{background:#FCEFD9}
+body:not(#_) table.cor-t td.nil{background:transparent}
+body:not(#_) .cor-lg{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:12.5px;color:#5F6072}
+body:not(#_) .cor-lg i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+body:not(#_) .cor-lg i.ok{background:#E3F3EA;border:1px solid #9CD3B5}
+body:not(#_) .cor-lg i.mid{background:#FCEFD9;border:1px solid #E8C48A}
+body:not(#_) .cor-big{font-family:'Space Grotesk',var(--body);font-size:46px;font-weight:600;line-height:1;letter-spacing:-.02em;margin-top:6px}
+body:not(#_) .cor-k{font-size:13px;color:#5F6072;margin:6px 0 10px}
+body:not(#_) .cor-sum ul{margin:14px 0 0;padding:0;list-style:none;font-size:13.5px;line-height:1.55;color:#3A3B4A}
+body:not(#_) .cor-sum li{padding:7px 0;border-top:1px solid #EFEDE8}
+body[data-dv="c"][data-mode="dark"]:not(#_) table.cor-t thead th,body[data-dv="c"][data-mode="dark"]:not(#_) .cor-lg,body[data-dv="c"][data-mode="dark"]:not(#_) .cor-k{color:#A9AAB9}
+body[data-dv="c"][data-mode="dark"]:not(#_) table.cor-t tbody th{color:#B8B9C8}
+body[data-dv="c"][data-mode="dark"]:not(#_) table.cor-t td b{color:#F2F2F6}
+body[data-dv="c"][data-mode="dark"]:not(#_) table.cor-t td span{color:#B9B9FF}
+body[data-dv="c"][data-mode="dark"]:not(#_) table.cor-t td.ok{background:rgba(17,115,74,.28)}
+body[data-dv="c"][data-mode="dark"]:not(#_) table.cor-t td.mid{background:rgba(214,140,30,.28)}
+body[data-dv="c"][data-mode="dark"]:not(#_) .cor-lg i.ok{background:rgba(17,115,74,.4);border-color:rgba(127,224,181,.5)}
+body[data-dv="c"][data-mode="dark"]:not(#_) .cor-lg i.mid{background:rgba(214,140,30,.4);border-color:rgba(240,190,110,.5)}
+body[data-dv="c"][data-mode="dark"]:not(#_) .cor-big{color:#F2F2F6}
+body[data-dv="c"][data-mode="dark"]:not(#_) .cor-sum ul{color:#D4D4E0}
+body[data-dv="c"][data-mode="dark"]:not(#_) .cor-sum li{border-top-color:rgba(255,255,255,.08)}
+@media (max-width:900px){body:not(#_) .cor{grid-template-columns:1fr;gap:22px}}
+@media (max-width:520px){
+ body:not(#_) table.cor-t{border-spacing:2px}
+ body:not(#_) table.cor-t thead th,body:not(#_) table.cor-t tbody th{font-size:11px}
+ body:not(#_) table.cor-t tbody th{width:52px;white-space:normal;word-break:keep-all;line-height:1.2}
+ body:not(#_) table.cor-t thead th{white-space:normal;word-break:keep-all;line-height:1.2;vertical-align:bottom}
+ body:not(#_) table.cor-t td{padding:5px 0;border-radius:6px}
+ body:not(#_) table.cor-t td b{font-size:11.5px}
+ body:not(#_) table.cor-t td span{font-size:11px}
+ body:not(#_) .cor-big{font-size:40px}
+}
