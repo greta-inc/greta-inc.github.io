@@ -2146,6 +2146,9 @@ body[data-dv="c"][data-mode="dark"]:not(#_) .w-tabs .sc-l{fill:#E6E6F0}
 .w-tabs .rh .rh-br{stroke:var(--indigo);stroke-width:2;fill:none;stroke-linecap:round}
 body[data-dv="c"][data-mode="dark"]:not(#_) .w-tabs .rh .rh-n{fill:#E6E6F0}
 
+/* ===== 사용자 피드백 반영 39차 (11/13) ===== */
+body:not(#_) .w-tabs .rk-cap,body[data-dv="c"]:not(#_) .w-tabs .rk-cap,body[data-dv="c"]:not(#_) .band .w-tabs .rk-cap{max-width:none}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
