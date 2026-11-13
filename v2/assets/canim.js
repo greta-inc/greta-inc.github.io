@@ -59,7 +59,7 @@
     });
     // 6. 섹션별 순차 등장
     q('.band .sec',R).forEach(function(sc){
-      mark(q(':scope > h3, :scope > .lead',sc),0,0.08);
+      mark(q(':scope > h3, :scope > h2.hx, :scope > .lead',sc),0,0.08);
       q(':scope .grid, :scope .stc-grid, :scope .news',sc).forEach(function(g){ mark(q(':scope > *',g),0.12,0.09); });
       mark(q(':scope .orc-list',sc),0.1,0);
     });

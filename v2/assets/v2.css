@@ -1,4 +1,4 @@
-
+:where(h2.hx){font-size:1.17em;margin-block:1em}:where(h3.hx){font-size:1em;margin-block:1.33em}:where(h4.hx){font-size:.83em;margin-block:1.67em}
 /* ===== 개편 시안 v2 (build_v2.py) ===== */
 /* 헤더: 알약 메뉴 → 펼친 글자 메뉴, 지금 페이지 밑줄, 언어 버튼 하나 + 밝게/어둡게 */
 body[data-dv="c"]:not(#_) .site-nav.v2nav{display:flex;align-items:center;gap:28px;flex-wrap:nowrap;padding-top:22px;padding-bottom:22px;position:relative;z-index:20}
@@ -41,8 +41,8 @@ body[data-dv="c"]:not(#_) #sc_nav .site-nav.v2nav>ul.mnu,body[data-dv="c"][data-
 /* 홈: 제품 창이 빠져 첫 화면을 글 중심으로(가운데) */
 body[data-dv="c"]:not(#_) #sc_hero_c .hc{max-width:none;margin-left:auto;margin-right:auto}
 /* 메인 섹션 번호 라벨(01 / Solutions …)은 섹션이 흩어져 맞지 않으므로 숨김 */
-body[data-dv="c"]:not(#_) #sc_orgs_c .sec>h1::before,body[data-dv="c"]:not(#_) #sc_orgs_c .sec>h3::before,
-body[data-dv="c"]:not(#_) #sc_competence_c .sec>h1::before,body[data-dv="c"]:not(#_) #sc_competence_c .sec>h3::before{display:none}
+body[data-dv="c"]:not(#_) #sc_orgs_c .sec>h1::before,body[data-dv="c"]:not(#_) #sc_orgs_c .sec>h2.hx::before,
+body[data-dv="c"]:not(#_) #sc_competence_c .sec>h1::before,body[data-dv="c"]:not(#_) #sc_competence_c .sec>h2.hx::before{display:none}
 @media (max-width:760px){ .v2badge{display:none} }
 /* SynPersona 개요의 만드는 과정 */
 body[data-dv="c"]:not(#_) .v2steps{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:34px;font-weight:600}
@@ -59,7 +59,7 @@ body[data-dv="c"]:not(#_) .v2panel:has(> .band:last-child:is(#sc_s_engine,#sc_e_
 body[data-dv="c"]:not(#_) #sc_cta .cta{margin-top:56px}
 @media (max-width:760px){ body[data-dv="c"]:not(#_) #sc_cta .cta{margin-top:28px} }
 /* 11/12 솔루션 페이지 FAQ 탭 */
-body[data-dv="c"]:not(#_) .v2faq>h3{margin-bottom:28px}
+body[data-dv="c"]:not(#_) .v2faq>h2.hx{margin-bottom:28px}
 body[data-dv="c"]:not(#_) #sc_f_head .hero p a.tlink{text-decoration:underline;text-underline-offset:3px;color:inherit}
 body[data-dv="c"]:not(#_) .v2faq .faqgroup+.faqgroup{margin-top:44px}
 /* 시안 표시 */
