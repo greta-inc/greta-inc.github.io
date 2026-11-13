@@ -97,6 +97,18 @@ body[data-dv="c"][data-mode="dark"]:not(#_) .cor-lg i.mid{background:rgba(214,14
 body[data-dv="c"][data-mode="dark"]:not(#_) .cor-big{color:#F2F2F6}
 body[data-dv="c"][data-mode="dark"]:not(#_) .cor-sum ul{color:#D4D4E0}
 body[data-dv="c"][data-mode="dark"]:not(#_) .cor-sum li{border-top-color:rgba(255,255,255,.08)}
+/* 단변량 · 이변량을 창 위 메뉴로 바꿔 보기(radio + CSS) */
+body:not(#_) .qt-r{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+body:not(#_) .w-qt .win-nav label.qt-t{padding:5px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s}
+body:not(#_) .w-qt .win-nav label.qt-t:hover{color:#171721}
+body:not(#_) #qtab1:checked~.hv .qt-t1,body:not(#_) #qtab2:checked~.hv .qt-t2{background:#fff;color:#171721;font-weight:600;box-shadow:0 1px 2px rgba(23,23,33,.1),0 0 0 1px rgba(23,23,33,.05)}
+body:not(#_) #qtab1:focus-visible~.hv .qt-t1,body:not(#_) #qtab2:focus-visible~.hv .qt-t2{outline:2px solid var(--indigo);outline-offset:1px}
+body[data-dv="c"][data-mode="dark"]:not(#_) .w-qt .win-nav label.qt-t:hover{color:#fff}
+body[data-dv="c"][data-mode="dark"]:not(#_) #qtab1:checked~.hv .qt-t1,body[data-dv="c"][data-mode="dark"]:not(#_) #qtab2:checked~.hv .qt-t2{background:rgba(255,255,255,.1);color:#fff;box-shadow:none}
+body:not(#_) .qt-ps{display:grid}
+body:not(#_) .qt-p{grid-area:1/1;visibility:hidden;opacity:0;transition:opacity .2s}
+body:not(#_) #qtab1:checked~.hv .qt-p1,body:not(#_) #qtab2:checked~.hv .qt-p2{visibility:visible;opacity:1}
+body:not(#_) #qtab1:checked~.hv .qt-pl2,body:not(#_) #qtab2:checked~.hv .qt-pl1,body:not(#_) #qtab1:checked~.qt-c2,body:not(#_) #qtab2:checked~.qt-c1{display:none}
 @media (max-width:900px){body:not(#_) .cor{grid-template-columns:1fr;gap:22px}}
 @media (max-width:520px){
  body:not(#_) table.cor-t{border-spacing:2px}
