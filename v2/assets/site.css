@@ -2192,6 +2192,11 @@ html body[data-dv="c"]:not(#_) .acts .b1{box-shadow:none}
 html body .gw .cc-us{background:#5F5DE3}
 html body .gw .cc-jp{color:#171721}
 
+/* 11/13 휴대폰 줄바꿈: 메일 주소는 줄을 나누지 않고, ELDO 분류 칩 아래 설명은 좁은 화면에서 출처를 다음 줄로 */
+a.tlink{white-space:nowrap}
+@media(max-width:480px){.cls-cap span{display:block;margin-left:0}}
+@media(max-width:389px){html body:not(#_) #sc_e_hero h1{font-size:min(33px,8.15vw)}}  /* ELDO 제목 '인텔리전스'가 한 줄에 혼자 남지 않게 */
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
