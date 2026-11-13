@@ -2140,6 +2140,12 @@ body[data-dv="c"][data-mode="dark"]:not(#_) .w-tabs .dt-t:hover{color:#fff}
 body[data-dv="c"][data-mode="dark"]:not(#_) .w-tabs .sc-l{fill:#E6E6F0}
 @media(max-width:760px){.w-tabs .dt-t{padding:7px 8px} .w-tabs .dt-t b{font-size:13.5px} .w-tabs .dt-t small{font-size:12px}}
 
+/* ===== 사용자 피드백 반영 35차 (11/13) ===== */
+.w-tabs .rh .rh-c{fill:var(--indigo)}
+.w-tabs .rh .rh-n{font-size:12.5px;fill:var(--sink2,#2A2B38);font-weight:600}
+.w-tabs .rh .rh-br{stroke:var(--indigo);stroke-width:2;fill:none;stroke-linecap:round}
+body[data-dv="c"][data-mode="dark"]:not(#_) .w-tabs .rh .rh-n{fill:#E6E6F0}
+
 /* ===== 실제 사이트용 (build_site.py) ===== */
 html{scroll-behavior:smooth}
 body{background:var(--paper)}
