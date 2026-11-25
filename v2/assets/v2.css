@@ -51,6 +51,20 @@ body[data-dv="c"]:not(#_) #sc_hero_c .hc{max-width:none;margin-left:auto;margin-
 body[data-dv="c"]:not(#_) #sc_orgs_c .sec>h1::before,body[data-dv="c"]:not(#_) #sc_orgs_c .sec>h2.hx::before,
 body[data-dv="c"]:not(#_) #sc_competence_c .sec>h1::before,body[data-dv="c"]:not(#_) #sc_competence_c .sec>h2.hx::before{display:none}
 @media (max-width:760px){ .v2badge{display:none} }
+/* 11/25 SynPersona 첫 화면 '생성 조건' 예시 창 */
+body:not(#_) .w-sp .sp-cond{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+body:not(#_) .w-sp .sp-cond>div{border:1px solid var(--rule);border-radius:12px;padding:10px 12px;background:var(--card)}
+body:not(#_) .w-sp .sp-cond em,body:not(#_) .w-sp .sp-vars em{display:block;font-style:normal;font-size:12.5px;color:#5F6072;margin-bottom:3px}
+body:not(#_) .w-sp .sp-cond b{font-size:15px;white-space:nowrap}
+body:not(#_) .w-sp .sp-vars{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:12px}
+body:not(#_) .w-sp .sp-vars em{width:100%;margin:0}
+body:not(#_) .w-sp .sp-vars span{font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(62,59,214,.08);color:var(--indigo)}
+body:not(#_) table.sp-t td,body:not(#_) table.sp-t thead th{text-align:left}
+body:not(#_) table.sp-t tbody th{font-family:'Space Grotesk',var(--body);color:#5F6072}
+body:not(#_) .w-sp .sp-note{margin:10px 0 0;font-size:12.5px;color:#5F6072}
+body[data-dv="c"][data-mode="dark"]:not(#_) .w-sp .sp-cond em,body[data-dv="c"][data-mode="dark"]:not(#_) .w-sp .sp-vars em,body[data-dv="c"][data-mode="dark"]:not(#_) .w-sp .sp-note,body[data-dv="c"][data-mode="dark"]:not(#_) table.sp-t tbody th{color:#A9AAB9}
+body[data-dv="c"][data-mode="dark"]:not(#_) .w-sp .sp-vars span{background:rgba(144,145,255,.16)}
+@media (max-width:520px){body:not(#_) .w-sp .sp-cond{grid-template-columns:1.35fr 1fr 1fr;gap:6px} body:not(#_) .w-sp .sp-cond>div{padding:9px 9px} body:not(#_) .w-sp .sp-cond b{font-size:13px} body:not(#_) table.sp-t{font-size:12px} body:not(#_) table.sp-t th,body:not(#_) table.sp-t td{padding:6px 4px}}
 /* SynPersona 개요의 만드는 과정 */
 body[data-dv="c"]:not(#_) .v2steps{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:34px;font-weight:600}
 body[data-dv="c"]:not(#_) .v2steps span{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--rule);border-radius:999px}

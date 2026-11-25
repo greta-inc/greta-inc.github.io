@@ -1,6 +1,6 @@
 // 실제 사이트용 동작 (build_site.py): 페이지 이동 · 문의 위치 · FAQ 분류 · 미디어 링크 · 영상 팝업
 (function(){
-  var MAP={"main": "/v2/", "home": "/v2/", "eldo": "/v2/eldo/", "syn": "/v2/synpersona/", "data": "/v2/data-analytics/", "about": "/v2/about/", "ceo": "/v2/about/#ceo", "results": "/v2/about/#results", "news": "/v2/media/", "faq": "/v2/contact/#faq", "contact": "/v2/contact/"};
+  var MAP={"main": "/v2/", "home": "/v2/", "eldo": "/v2/eldo/", "synth": "/v2/synthegra/", "syn": "/v2/synpersona/", "data": "/v2/data-analytics/", "about": "/v2/about/", "ceo": "/v2/about/#ceo", "results": "/v2/about/#results", "news": "/v2/media/", "faq": "/v2/contact/#faq", "contact": "/v2/contact/"};
   function go(k){
     if(k==='contact'){ var c=document.getElementById('contact');
       if(c){ c.scrollIntoView({behavior:'smooth',block:'start'}); try{history.replaceState(null,'','#contact');}catch(e){} return; }
